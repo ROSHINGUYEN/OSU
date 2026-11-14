@@ -1,0 +1,10 @@
+{
+  "jump_aim": {
+    "pattern": "jump_aim",
+    "samples_count": 30,
+    "avg_accuracy": 76.76,
+    "proficiency_score": 0.701,
+    "timing_bias_ms": 1.73,
+    "updated_at": "2026-11-14T06:01:50.427836+00:00"
+  }
+}

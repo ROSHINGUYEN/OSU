@@ -1,0 +1,11 @@
+{
+  "lead_time_offset_ms": 0.5,
+  "preparation_lead_ms": 13.0,
+  "slider_waypoint_density": 16,
+  "aim_smoothing_steps": 6,
+  "deadline_margin_ms": 50.0,
+  "alternation_threshold_ms": 200.0,
+  "post_slider_gap_ms": 260.0,
+  "aim_lead_time_ms": 26.0,
+  "slider_step_ms": 28.0
+}

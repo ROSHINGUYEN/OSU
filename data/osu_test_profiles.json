@@ -1,0 +1,41 @@
+{
+  "standard:title_integration beatmap": {
+    "beatmap_id": 0,
+    "title": "Integration Beatmap",
+    "mode": "standard",
+    "total_plays": 0,
+    "total_quits": 21,
+    "best_accuracy": 0.0,
+    "learned_adaptive_offset_ms": 0.0,
+    "kalman_variance": 4.0,
+    "archetype": "balanced",
+    "last_avg_error_ms": 0.0,
+    "updated_at": ""
+  },
+  "standard:title_test song": {
+    "beatmap_id": 0,
+    "title": "Test Song",
+    "mode": "standard",
+    "total_plays": 0,
+    "total_quits": 8,
+    "best_accuracy": 0.0,
+    "learned_adaptive_offset_ms": 0.0,
+    "kalman_variance": 4.0,
+    "archetype": "balanced",
+    "last_avg_error_ms": 0.0,
+    "updated_at": ""
+  },
+  "standard:title_osu! session": {
+    "beatmap_id": 0,
+    "title": "osu! Session",
+    "mode": "standard",
+    "total_plays": 0,
+    "total_quits": 1,
+    "best_accuracy": 0.0,
+    "learned_adaptive_offset_ms": 0.0,
+    "kalman_variance": 4.0,
+    "archetype": "balanced",
+    "last_avg_error_ms": 0.0,
+    "updated_at": ""
+  }
+}

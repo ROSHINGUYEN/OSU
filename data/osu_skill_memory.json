@@ -1,0 +1,18 @@
+{
+  "jump_aim": {
+    "pattern": "jump_aim",
+    "samples_count": 25,
+    "avg_accuracy": 93.52,
+    "proficiency_score": 0.922,
+    "timing_bias_ms": 0.27,
+    "updated_at": "2026-11-14T05:47:06.241784+00:00"
+  },
+  "stream_speed": {
+    "pattern": "stream_speed",
+    "samples_count": 3,
+    "avg_accuracy": 85.0,
+    "proficiency_score": 0.85,
+    "timing_bias_ms": 0.0,
+    "updated_at": "2026-10-28T23:31:21.548308+00:00"
+  }
+}
