@@ -64,6 +64,9 @@ echo.
 
 "%PY_EXE%" "%~dp0run_osu.py" %*
 
+:: 5. Tự động dọn dẹp và tắt hoàn toàn tosu khi đóng game hoặc thoát
+taskkill /F /IM tosu.exe >nul 2>&1
+
 if %ERRORLEVEL% NEQ 0 (
     echo.
     echo [ERROR] Ứng dụng kết thúc với mã lỗi %ERRORLEVEL%.

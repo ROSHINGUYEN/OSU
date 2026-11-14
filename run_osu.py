@@ -68,6 +68,26 @@ def is_port_in_use(port: int, host: str = "127.0.0.1") -> bool:
         return False
 
 
+def stop_tosu():
+    """Tự động tắt tosu.exe khi đóng game hoặc dừng chương trình."""
+    global tosu_proc
+    logger.info("[TOSU] Đang tự động đóng tiến trình Tosu Memory Reader...")
+    if tosu_proc and tosu_proc.poll() is None:
+        try:
+            tosu_proc.terminate()
+            tosu_proc.wait(timeout=1.5)
+        except Exception:
+            try:
+                tosu_proc.kill()
+            except Exception:
+                pass
+    if sys.platform == "win32":
+        try:
+            subprocess.run(["taskkill", "/F", "/IM", "tosu.exe"], capture_output=True, timeout=2.0)
+        except Exception:
+            pass
+
+
 def ensure_tosu_running():
     """Tự động kiểm tra và khởi động tosu.exe nếu chưa chạy."""
     global tosu_proc
@@ -242,6 +262,10 @@ def main():
                     was_hwnd_present = True
                     if not getattr(osu_app, "_is_running", False):
                         osu_app.start()
+                elif not hwnd and was_hwnd_present:
+                    logger.info("\n[OSU] Phát hiện game osu! đã đóng. Đang tự động tắt Tosu và kết thúc...")
+                    is_running = False
+                    break
                 elif not hwnd:
                     was_hwnd_present = False
 
@@ -289,7 +313,8 @@ def main():
             osu_app.stop()
         except Exception:
             pass
-        logger.info("Phiên chơi kết thúc an toàn.")
+        stop_tosu()
+        logger.info("Phiên chơi kết thúc an toàn. Tosu đã tự động tắt.")
 
 
 if __name__ == "__main__":

@@ -11,15 +11,15 @@
 
 ---
 
-## 🎬 Trực Quan Hóa Hoạt Động (Demo Preview & Video)
+## 🎬 Trực Quan Hóa Hoạt Động (Gameplay Video Demo)
 
 Hệ thống tự động đồng bộ nhịp nốt, rê chuột mượt mà và gõ phím theo thời gian thực:
 
-![Osu Gameplay Preview](assets/demo_preview.png)
+![Osu Gameplay Live Demo](assets/demo.gif)
 
-> 🎥 **Video Demo Gameplay Thực Tế (Không Độ Trễ):**  
-> Xem trực tiếp video quay màn hình gameplay tại:  
-> `assets/demo.mp4` *(Định dạng H.264 60 FPS sắc nét, đã cắt bỏ thời gian chờ)*
+<video src="assets/demo.mp4" poster="assets/demo_preview.png" controls="controls" width="100%" height="auto">
+  Trình duyệt của bạn không hỗ trợ thẻ video. Vui lòng mở trực tiếp tệp assets/demo.mp4.
+</video>
 
 ---
 
